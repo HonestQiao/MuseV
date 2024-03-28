@@ -878,8 +878,8 @@ def online_t2v_inference(
             ip_adapter_scale=ip_adapter_scale,
             redraw_condition_image_with_ipdapter=redraw_condition_image_with_ipdapter,
             prompt_only_use_image_prompt=prompt_only_use_image_prompt,
-            need_redraw=need_redraw,
-            use_video_redraw=use_video_redraw,
+            #need_redraw=need_redraw,
+            #use_video_redraw=use_video_redraw,
             # serial_denoise parameter start
             record_mid_video_noises=record_mid_video_noises,
             record_mid_video_latents=record_mid_video_latents,
