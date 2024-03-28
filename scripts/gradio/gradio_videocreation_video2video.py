@@ -652,6 +652,7 @@ def online_v2v_inference(
     fps,
     w,
     h,
+    video_len,
     progress=gr.Progress(track_tqdm=True),
 ):
     progress(0, desc="Starting...")
@@ -665,6 +666,7 @@ def online_v2v_inference(
     image = Image.fromarray(image_np)
     image.save(image_path)
 
+    time_size = int(video_len)
     test_data = {
         "name": image_cuid,
         "prompt": prompt,
